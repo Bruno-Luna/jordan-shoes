@@ -1,0 +1,207 @@
+    /*Variáveis*/
+    :root {
+        --bgSite: #f6f6f6;
+        --bgCard: #ebe9ea;
+        --white: #fff;
+        --title: #181818;
+        --text: #474747;
+    }
+    
+    /*Reset*/
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    html {
+        font-size: 62.5%;
+    }
+    body {
+        font-size: 1.6rem;
+        background-color: var(--bgSite);
+        height: auto;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    @font-face {
+        font-family: 'Montserrat-Medium';
+        src: url('../fonts/Montserrat-Medium.ttf') format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Montserrat-SemiBold';
+        src: url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Montserrat-Bold';
+        src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+    }
+
+
+
+
+    header{
+            
+    }
+
+
+    header .cupom{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 10vh;
+            background-color: black;
+           
+    
+        }
+
+    header .cupom p{
+        color: var(--white);
+        font-family: 'Montserrat-SemiBold';
+    }
+
+    header .titulo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+
+    }
+
+    header .titulo h1{
+            font-family: 'Montserrat-Medium';
+    }
+
+    section{
+    }
+
+    section .imagem-principal{
+        height: 75vh;
+        position: relative;
+      
+
+    }
+
+    section .imagem-principal .imagem{
+        background-image: url("../image/wallpaper.jpeg");
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        filter: brightness(50%);
+        height: 75vh;
+        width: 100%;
+    }
+
+    section .imagem-principal 
+    .descricao-topo{
+        position: absolute;
+        top: 22%;
+        left: 8%;
+    }
+
+    section .imagem-principal .descricao-topo h2{
+            color: var(--white);
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+            font-family: 'Montserrat-SemiBold';
+    }
+
+    section .imagem-principal .descricao-topo p{
+        color: var(--white);
+        line-height: 28px;
+        font-family: 'Montserrat-Medium';
+        letter-spacing: 1px;
+    }
+
+    main{
+
+    }
+
+    main .conteudo-principal{
+
+    }
+
+    main .conteudo-principal .texto-tenis{
+        height: 18vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    main .conteudo-principal .texto-tenis h3{
+        
+        font-size: 2.6rem;
+        font-family: 'Montserrat-Bold';
+        margin-bottom: 1.2rem;
+        height: 8vh;
+        
+    }
+
+    main .conteudo-principal .texto-tenis p{
+        font-family: 'Montserrat-Medium';
+        text-align: center;
+        font-size: 1.8rem;
+
+    }
+
+
+    main .conteudo-principal .catalogo{
+        height: 120vh;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 100px 100px;
+        grid-template-columns: 1fr 1fr 1fr ;
+        align-content: center;
+        justify-items: center;
+        gap: 90px;
+        
+    }
+
+    main .conteudo-principal .catalogo .tenis{
+        width: 200px;
+        height: 130px;
+        border: 1px solid var(--bgCard);
+        border-radius: 8px;
+        background-color: hsl(0, 0%, 88%); ;
+        box-shadow: 2px 2px 2px hsl(0, 0%, 48%);
+        cursor: pointer;
+    }
+
+
+
+    footer{
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background-color: black;
+        color: var(--white);
+    }
+
+    footer p{
+        font-family: 'Montserrat-Medium';
+    
+    }
+
+    footer span{
+        font-size: 1rem;
+        font-family: 'Montserrat-Medium';
+    }
+
+    footer span a{
+        color: yellow;
+        font-family: 'Montserrat-Medium';
+        font-size: 1rem;
+    }
+
+
