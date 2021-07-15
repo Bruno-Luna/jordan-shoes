@@ -16,6 +16,7 @@
     }
     html {
         font-size: 62.5%;
+        
     }
     body {
         font-size: 1.6rem;
@@ -44,13 +45,7 @@
         src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
     }
 
-
-
-
-    header{
-            
-    }
-
+    /* TOPO */
 
     header .cupom{
             display: flex;
@@ -60,7 +55,7 @@
             background-color: black;
            
     
-        }
+}
 
     header .cupom p{
         color: var(--white);
@@ -76,11 +71,10 @@
     }
 
     header .titulo h1{
-            font-family: 'Montserrat-Medium';
+        font-family: 'Montserrat-Medium';
     }
 
-    section{
-    }
+    /* BANNER */
 
     section .imagem-principal{
         height: 75vh;
@@ -95,42 +89,42 @@
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
-        filter: brightness(50%);
+        filter: brightness(45%);
         height: 75vh;
         width: 100%;
     }
 
-    section .imagem-principal 
-    .descricao-topo{
+    section .imagem-principal .descricao-topo{
         position: absolute;
-        top: 22%;
+        top: 28%;
         left: 8%;
     }
 
     section .imagem-principal .descricao-topo h2{
-            color: var(--white);
-            margin-bottom: 12px;
-            letter-spacing: 1px;
-            font-family: 'Montserrat-SemiBold';
+        color: var(--white);
+        margin-bottom: 12px;
+        letter-spacing: 1px;
+        font-family: 'Montserrat-SemiBold';
     }
 
     section .imagem-principal .descricao-topo p{
+        width: 460px;
         color: var(--white);
         line-height: 28px;
         font-family: 'Montserrat-Medium';
         letter-spacing: 1px;
     }
 
-    main{
-
-    }
+    /* CATALÓGO DE TÊNIS  */
 
     main .conteudo-principal{
-
+        
+        height: auto;
+        margin: 0 2rem;
     }
 
     main .conteudo-principal .texto-tenis{
-        height: 18vh;
+        height: 28vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -138,7 +132,6 @@
         
     }
     main .conteudo-principal .texto-tenis h3{
-        
         font-size: 2.6rem;
         font-family: 'Montserrat-Bold';
         margin-bottom: 1.2rem;
@@ -155,30 +148,33 @@
 
 
     main .conteudo-principal .catalogo{
-        height: 120vh;
+        height: auto;
         width: 100%;
         display: grid;
-        grid-template-rows: 100px 100px;
-        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: auto auto;
+        grid-template-columns:  1fr 1fr 1fr;
         align-content: center;
         justify-items: center;
-        gap: 90px;
+        row-gap: 80px;
+        column-gap: 24px;
         
     }
 
     main .conteudo-principal .catalogo .tenis{
-        width: 200px;
-        height: 130px;
-        border: 1px solid var(--bgCard);
+        width: 80%;
+        
+        border: none;
         border-radius: 8px;
-        background-color: hsl(0, 0%, 88%); ;
+        background-color: hsl(0, 0%, 98%); ;
         box-shadow: 2px 2px 2px hsl(0, 0%, 48%);
         cursor: pointer;
     }
 
-
+    /* FOOTER */
 
     footer{
+        position: static;
+        
         height: 10vh;
         display: flex;
         align-items: center;
@@ -186,22 +182,56 @@
         justify-content: center;
         background-color: black;
         color: var(--white);
+        font-family: 'Montserrat-Medium';
+        margin-top: 4rem;
     }
 
-    footer p{
-        font-family: 'Montserrat-Medium';
-    
-    }
 
     footer span{
         font-size: 1rem;
-        font-family: 'Montserrat-Medium';
+        margin-top: .4rem;
     }
 
     footer span a{
         color: yellow;
-        font-family: 'Montserrat-Medium';
         font-size: 1rem;
     }
 
 
+/* RESPONSIVIDADE */
+
+
+@media only screen and (min-width:600px) and (max-width:768px){
+    
+    section .imagem-principal {
+        height: 60vh;
+    }
+
+    section .imagem-principal .imagem {
+        height: 60vh;
+    }
+    
+    main .conteudo-principal {
+        height: auto;
+        
+    }
+    main .conteudo-principal .catalogo {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 120px;
+        column-gap: 40px;
+    }
+    main .conteudo-principal .catalogo .tenis{
+        width: auto;
+        height: auto;
+    }
+
+    footer{
+        margin-top: 5rem;
+        
+    }
+
+}
