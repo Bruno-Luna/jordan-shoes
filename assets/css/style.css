@@ -14,8 +14,11 @@
         box-sizing: border-box;
         text-decoration: none;
     }
-    html {
+    html,body {
         font-size: 62.5%;
+        max-width: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
         
     }
     body {
@@ -66,7 +69,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 10vh;
+        height: 12vh;
 
     }
 
@@ -162,11 +165,10 @@
 
     main .conteudo-principal .catalogo .tenis{
         width: 80%;
-        
         border: none;
         border-radius: 8px;
-        background-color: hsl(0, 0%, 98%); ;
-        box-shadow: 2px 2px 2px hsl(0, 0%, 48%);
+        background-color: hsl(0, 0%, 87%); ;
+        box-shadow: 2px 2px 8px hsl(0, 0%, 48%);
         cursor: pointer;
     }
 
@@ -202,7 +204,8 @@
 
 
 @media only screen and (min-width:600px) and (max-width:768px){
-    
+   
+   
     section .imagem-principal {
         height: 60vh;
     }
@@ -233,5 +236,69 @@
         margin-top: 5rem;
         
     }
+
+}
+
+@media only screen and (min-width:250px) and (max-width:599px){
+   
+    
+    header .cupom {
+        
+        height: 18vh;
+    }
+    header .cupom p {
+        text-align: center;
+        font-size: .5rem;
+        line-height: 22px;
+    }
+    header .titulo h1 {
+        font-size: 2.6rem;
+    }
+    section .imagem-principal .descricao-topo h2 {
+        
+        font-size: 1.8rem;
+    }
+
+    section .imagem-principal .descricao-topo p {
+        width: 250px; 
+        line-height: 22px; 
+        letter-spacing: 1px;
+        font-size: 1rem;
+    }
+    section .imagem-principal {
+        height: 55vh;
+    }
+
+    section .imagem-principal .imagem {
+        height: 55vh;
+    }
+    main .conteudo-principal .texto-tenis {
+        height: 32vh;
+        margin-bottom: 2rem;
+    }
+    main .conteudo-principal .texto-tenis p {
+     
+        font-size: 1.4rem;
+    }
+    
+    main .conteudo-principal {
+        height: auto;
+    }
+    main .conteudo-principal .catalogo {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        row-gap: 100px;
+       
+    }
+
+    footer {
+    
+    font-size: .8rem;
+    }
+  
+   
 
 }
