@@ -33,15 +33,16 @@
             </div>
             <div class="descricao-topo">
                 <h2>Sua melhor loja Jordan</h2>
-                <p>O Tênis Jordan é fruto de uma velha e 
-                forte parceria entre Nike e o jogador <strong>Michael Jordan</strong>. </p>
-
+                <div id="animacao-typed">
+                    <p >O Tênis Jordan é fruto de uma velha e forte parceria entre Nike e o jogador <strong>Michael Jordan</strong>. </p>
+                </div>
+                <p id="typed"></p>
             </div>
         </div>
 
     </section>
 
-    <!-- Catalogo de tênis -->
+    <!-- Catálogo de tênis -->
 
     <main>
         <div class="conteudo-principal">
@@ -50,28 +51,28 @@
                 <p>Frete grátis na compra de dois tênis Jordan</p>
             </div>
             <div class="catalogo">
-                <div class="tenis tn0">
+                <div class="tenis">
                     <img src="assets/image/0.png" alt="">
                 </div>
-                <div class="tenis tn1">
+                <div class="tenis">
                     <img src="assets/image/1.png" alt="">
                 </div>
-                <div class="tenis tn2">
+                <div class="tenis">
                     <img src="assets/image/2.png" alt="">
                 </div>
-                <div class="tenis tn3">
+                <div class="tenis">
                     <img src="assets/image/3.png" alt="">
                 </div>
-                <div class="tenis tn4">
+                <div class="tenis">
                     <img src="assets/image/4.png" alt="">
                 </div>
-                <div class="tenis tn5">
+                <div class="tenis">
                     <img src="assets/image/5.png" alt="">
                 </div>
-                <div class="tenis tn6">
+                <div class="tenis">
                     <img src="assets/image/6.png" alt="">
                 </div>
-                <div class="tenis tn7">
+                <div class="tenis">
                     <img src="assets/image/7.png" alt="">
                 </div>
 
@@ -88,6 +89,32 @@
             <a href="">Bruno Luna</a>
         </span>
     </footer>
+
+        <!-- Animações com JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('#typed',{
+            stringsElement: '#animacao-typed',
+            typeSpeed: 30
+        });
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+            
+        const sr = ScrollReveal({
+        origin: 'bottom',
+        distance: '50px',
+        duration: 2000,
+        reset: true
+    });
+        
+        ScrollReveal().reveal('.conteudo-principal', { delay: 200 });
+        ScrollReveal().reveal('.catalogo', { delay: 300 });
+        ScrollReveal().reveal('.tenis', { delay: 400 });
+        
+    </script>
 </body>
 
 </html>

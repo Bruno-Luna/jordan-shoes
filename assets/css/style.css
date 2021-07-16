@@ -14,6 +14,7 @@
         box-sizing: border-box;
         text-decoration: none;
     }
+
     html,body {
         font-size: 62.5%;
         max-width: 100%;
@@ -21,18 +22,13 @@
         overflow-y: scroll;
         
     }
-    body {
-        font-size: 1.6rem;
-        background-color: var(--bgSite);
-        height: auto;
-    }
     
     img {
         max-width: 100%;
         height: auto;
         display: block;
     }
-
+    
     @font-face {
         font-family: 'Montserrat-Medium';
         src: url('../fonts/Montserrat-Medium.ttf') format('truetype');
@@ -48,16 +44,22 @@
         src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
     }
 
+
+    body {
+        font-size: 1.6rem;
+        background-color: var(--bgSite);
+        height: auto;
+    }
+
     /* TOPO */
 
     header .cupom{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 10vh;
-            background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+        background-color: #000;
            
-    
 }
 
     header .cupom p{
@@ -121,7 +123,6 @@
     /* CATALÓGO DE TÊNIS  */
 
     main .conteudo-principal{
-        
         height: auto;
         margin: 0 2rem;
     }
@@ -176,13 +177,12 @@
 
     footer{
         position: static;
-        
         height: 10vh;
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        background-color: black;
+        background-color: #000;
         color: var(--white);
         font-family: 'Montserrat-Medium';
         margin-top: 4rem;
@@ -195,7 +195,7 @@
     }
 
     footer span a{
-        color: yellow;
+        color: #ffff00;
         font-size: 1rem;
     }
 
@@ -218,6 +218,7 @@
         height: auto;
         
     }
+
     main .conteudo-principal .catalogo {
         height: auto;
         width: 100%;
@@ -234,7 +235,6 @@
 
     footer{
         margin-top: 5rem;
-        
     }
 
 }
@@ -243,17 +243,19 @@
    
     
     header .cupom {
-        
         height: 18vh;
     }
+
     header .cupom p {
         text-align: center;
-        font-size: .5rem;
+        font-size: 1.2rem;
         line-height: 22px;
     }
+
     header .titulo h1 {
         font-size: 2.6rem;
     }
+
     section .imagem-principal .descricao-topo h2 {
         
         font-size: 1.8rem;
@@ -265,6 +267,7 @@
         letter-spacing: 1px;
         font-size: 1rem;
     }
+
     section .imagem-principal {
         height: 55vh;
     }
@@ -272,18 +275,20 @@
     section .imagem-principal .imagem {
         height: 55vh;
     }
+
     main .conteudo-principal .texto-tenis {
         height: 32vh;
         margin-bottom: 2rem;
     }
+
     main .conteudo-principal .texto-tenis p {
-     
         font-size: 1.4rem;
     }
     
     main .conteudo-principal {
         height: auto;
     }
+
     main .conteudo-principal .catalogo {
         height: auto;
         width: 100%;
@@ -291,14 +296,10 @@
         grid-template-rows: auto;
         grid-template-columns: 1fr;
         row-gap: 100px;
-       
     }
 
     footer {
-    
     font-size: .8rem;
     }
-  
-   
 
 }
