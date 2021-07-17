@@ -2,6 +2,7 @@
     :root {
         --bgSite: #f6f6f6;
         --bgCard: #ebe9ea;
+        --shadowBx: #7a7a7a;
         --white: #fff;
         --title: #181818;
         --text: #474747;
@@ -58,7 +59,7 @@
         align-items: center;
         justify-content: center;
         height: 10vh;
-        background-color: #000;
+        background-color: hsl(0, 0%, 5%);
            
 }
 
@@ -72,11 +73,13 @@
         align-items: center;
         justify-content: center;
         height: 12vh;
+       
 
     }
 
     header .titulo h1{
-        font-family: 'Montserrat-Medium';
+        font-family: 'Montserrat-Medium'; 
+        color: var(--title);
     }
 
     /* BANNER */
@@ -140,6 +143,7 @@
         font-family: 'Montserrat-Bold';
         margin-bottom: 1.2rem;
         height: 8vh;
+        color: var(--title);
         
     }
 
@@ -147,6 +151,7 @@
         font-family: 'Montserrat-Medium';
         text-align: center;
         font-size: 1.8rem;
+        color: var(--text);
 
     }
 
@@ -168,8 +173,8 @@
         width: 80%;
         border: none;
         border-radius: 8px;
-        background-color: hsl(0, 0%, 87%); ;
-        box-shadow: 2px 2px 8px hsl(0, 0%, 48%);
+        background-color: var(--bgCard);
+        box-shadow: 2px 2px 8px var(--shadowBx) ;
         cursor: pointer;
         
     }
@@ -190,7 +195,7 @@
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        background-color: #000;
+        background-color: hsl(0, 0%, 5%);
         color: var(--white);
         font-family: 'Montserrat-Medium';
         margin-top: 4rem;
