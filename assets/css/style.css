@@ -171,6 +171,14 @@
         background-color: hsl(0, 0%, 87%); ;
         box-shadow: 2px 2px 8px hsl(0, 0%, 48%);
         cursor: pointer;
+        
+    }
+    main .conteudo-principal .catalogo .tenis:hover img{
+        transform: scale(1.1);
+         /* //efeito de zoom na imagem */
+         transition: 1.4s ease-in-out;
+        /* //delay do efeito */
+        
     }
 
     /* FOOTER */
@@ -265,7 +273,7 @@
         width: 250px; 
         line-height: 22px; 
         letter-spacing: 1px;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     section .imagem-principal {
