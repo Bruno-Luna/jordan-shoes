@@ -61,7 +61,7 @@ https://bruno-luna.github.io/jordan-shoes/
 
 ## Especificações:
 
-- Fontes utilizadas: `Montserrat-Bold.ttf, Montserrat-SemiBold.ttf, Montserrat-Medium.ttf  `
+- Fontes utilizadas: `Montserrat-Bold, Montserrat-SemiBold, Montserrat-Medium.`
 
 - Cores utilizadas:  
 
@@ -77,9 +77,9 @@ https://bruno-luna.github.io/jordan-shoes/
 
 ### Desktop:
 
-![]()
+![](https://github.com/Bruno-Luna/jordan-shoes/blob/master/assets/screenshot/desktop.png)
 
 ### Mobile:
 
-![]()
+![](https://github.com/Bruno-Luna/jordan-shoes/blob/master/assets/screenshot/mobile.png)
 
